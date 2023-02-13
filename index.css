@@ -1,0 +1,168 @@
+*/ *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+#home {
+    height: 100vh;
+    background-color: #FFC0CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: 'Raleway', sans-serif;
+}
+
+span {
+    font-size: 2rem;
+}
+
+p,
+a {
+    font-family: 'Patrick Hand SC', cursive;
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 150px);
+    left: calc(50%);
+    width: 0;
+    height: 30px;
+    border-radius: 2px;
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-width: thin;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 0;
+    }
+
+    50% {
+        margin-top: 20px;
+    }
+
+    100% {
+        margin-top: 0;
+    }
+}
+
+#first,
+#second,
+#third,
+#fourth,
+#fifth,
+#sixth {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#first {
+    background-color: #FFE5B4;
+}
+
+#second {
+    background-color: #B0E0E6;
+}
+
+#third {
+    background-color: #FFE5B4;
+}
+
+#fourth {
+    background-color: #B0E0E6;
+}
+
+#fifth {
+    background-color: #FFE5B4;
+}
+
+#sixth {
+    background-color: #FFC0CB;
+}
+
+video {
+    width: 240px;
+    height: 425px;
+}
+
+.gift {
+    font-size: 2rem;
+}
+
+#footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFC0CB;
+}
