@@ -152,9 +152,9 @@ a {
     background-color: #FFC0CB;
 }
 
-video {
-    width: 240px;
-    height: 425px;
+.img {
+    width: 250px;
+    height: 400px;
 }
 
 .gift {
